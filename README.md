@@ -1,2 +1,1 @@
-# funfun
-weeei
+# Modaal 練習リポジトリ
