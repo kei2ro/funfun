@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Modaal デモページ</title>
 
     <!--  jQuery読み込み-->
@@ -15,14 +16,17 @@
 
   </head>
   <body>
-  <button class="inline">Show</button>
-  <div id="inline" style="display:none;">
+  <button class="modal-button" style="width:100px;height:60px;border:3px;">Show</button>
+
+  <!--  モーダルで表示する部分-->
+  <div id="modal" style="display:none;">
     Inline content goes here...
   </div>
 
   <script>
-    $(".inline").modaal({
-      content_source: '#inline'
+    $(".modal-button").modaal({
+      content_source: '#modal',
+      fullscreen: true,
     });
   </script>
   </body>
